@@ -1,0 +1,809 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  font-size: 14px;
+}
+section {
+  margin-top: 50px;
+}
+nav {
+  display: flex;
+  z-index: 999;
+  background: white;
+}
+nav:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+nav .logo {
+  float: left;
+}
+.logo {
+  width: 30%;
+}
+.logo img {
+  width: 70%;
+  margin-left: 50px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+  z-index: 999;
+  background: white;
+}
+nav ul li a {
+  line-height: 70px;
+  text-decoration: none;
+  padding: 8px 15px;
+  z-index: 999;
+  background: white;
+}
+nav ul li a:hover {
+  color: #0bb0ee;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #0bb0ee, 0 0 10px #0bb0ee;
+}
+nav ul ul li a:hover {
+  box-shadow: none;
+}
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s;
+}
+nav ul ul ul {
+  border-top: none;
+}
+nav ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li {
+  position: relative;
+  margin: 0px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: white;
+}
+nav ul ul li a {
+  line-height: 30px;
+  background: white;
+}
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  left: 150px;
+}
+.show,
+.icon,
+input {
+  display: none;
+}
+.fa-plus {
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul {
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo {
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a,
+  ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover {
+    box-shadow: none;
+  }
+  .show {
+    display: block;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover {
+    color: #0bb0ee;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul {
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a {
+    padding-left: 40px;
+  }
+  nav ul ul ul a {
+    padding-left: 80px;
+  }
+  nav ul ul ul li {
+    position: static;
+  }
+  [id^="btn"]:checked + ul {
+    display: block;
+  }
+  nav ul ul li {
+    border-bottom: 0px;
+  }
+  span.cancel:before {
+    content: "\f00d";
+  }
+}
+.content {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header {
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+.blocks {
+  text-align: center;
+}
+.blocks p {
+  margin: 20px 120px;
+  text-align: justify;
+}
+.help-section {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.help-section h2 {
+  flex-basis: 100%;
+}
+.help-section img {
+  width: 80%;
+  margin: 15px;
+  box-shadow: 2px 2px 2px 2px #0bb0ee;
+}
+.block {
+  flex-basis: 30%;
+  transition: 0.8s;
+}
+
+.block:hover {
+  opacity: 70%;
+  margin-top: 5px;
+}
+
+.reservation {
+  text-align: center;
+  background: #0bb0ee;
+  margin: 20px 200px;
+  color: white;
+}
+.reservation button {
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  color: #0bb0ee;
+  border: 2px black solid;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover {
+  background: #0bb0ee;
+  color: white;
+}
+
+/* READ MORE */
+
+.read-more {
+  padding: 10px 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.read-logo {
+  flex-basis: 100%;
+  text-align: center;
+}
+.read-logo img {
+  width: 40%;
+}
+.read-more-inner {
+  flex-basis: 29%;
+  margin: 0 20px;
+  text-align: justify;
+  background: white;
+  box-shadow: 4px 4px 4px 4px #0bb0ee;
+  font-size: 14px;
+}
+
+.read-more-inner h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.read-more-inner p {
+  margin: 15px;
+  margin-bottom: 0;
+}
+
+.btn2 {
+  float: right;
+  background: #0bb0ee;
+  color: white;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  transition: 0.8s;
+  border: none;
+  cursor: pointer;
+}
+.btn2:hover {
+  background: white;
+  color: #0bb0ee;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 80px;
+  background: #0bb0ee;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer p {
+  text-align: justify;
+}
+.footer-inner {
+  flex-basis: 25%;
+  padding: 15px;
+}
+.footer-inner ul {
+  list-style-type: none;
+}
+
+footer #social-media-footer a .fa-facebook,
+footer #social-media-footer a .fa-youtube,
+footer #social-media-footer a .fa-instagram {
+  transition: 0.4s;
+}
+footer #social-media-footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+footer #social-media-footer ul li {
+  font-size: 48px;
+  padding: 16px;
+  transition: 0.4s;
+}
+
+footer #social-media-footer a .fa-youtube:hover {
+  color: red;
+}
+footer #social-media-footer a .fa-facebook:hover {
+  color: #3b5998;
+}
+footer #social-media-footer a .fa-instagram:hover {
+  color: purple;
+}
+
+/* ABOUT */
+
+.about {
+  margin: 40px 200px;
+  text-align: center;
+}
+.about-img img {
+  width: 60%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #0bb0ee;
+}
+.about h2 {
+  background: #0bb0ee;
+  width: 50%;
+  margin: 40px auto;
+  border-radius: 10px;
+  color: white;
+}
+.about p {
+  text-align: justify;
+  margin: 40px auto;
+}
+.about-block {
+  display: flex;
+}
+.about-block p,
+.about-img {
+  width: 100%;
+}
+
+/* Depilacja */
+.depilation-section {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+.depilation-intro-page {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+.depilation-section h2 {
+  background: #0bb0ee;
+  width: 50%;
+  margin: 40px auto;
+  border-radius: 10px;
+  color: white;
+}
+.depilation-section h2,
+.depilation-menu {
+  flex-basis: 100%;
+}
+
+.depilation-description,
+.depilation-img {
+  flex-basis: 50%;
+}
+.depilation-img img {
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #0bb0ee;
+}
+.depilation-description {
+  text-align: justify;
+}
+
+.depilation-menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+.depilation-menu ul li {
+  border: 2px solid #0bb0ee;
+  border-radius: 10px;
+  padding: 10px;
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.8s;
+}
+.depilation-menu ul li:hover {
+  color: white;
+  background: #0bb0ee;
+}
+.depilation-description2 p {
+  text-align: justify;
+}
+.depilation-description2 h3 {
+  margin: 30px auto;
+}
+/* Dlaczego */
+.dlaczego-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.dlaczego,
+.przeciwwskazania,
+.prepare,
+.after,
+.worth,
+.prices {
+  display: none;
+}
+th,
+tr,
+td {
+  border: 1px solid black;
+}
+.dlaczego-inner {
+  flex-basis: 29%;
+  margin: 20px;
+  text-align: justify;
+  background: white;
+  box-shadow: 4px 4px 4px 4px #0bb0ee;
+  font-size: 14px;
+}
+.dlaczego-inner h4 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 10px;
+  font-size: 16px;
+}
+.dlaczego-inner p {
+  margin: 5px 15px;
+}
+/* Przeciwwskazania */
+.przeciwwskazania,
+.prepare {
+  text-align: left;
+}
+.przeciwwskazania h2,
+.przeciwwskazania-inner h4 {
+  text-align: center;
+}
+.przeciwwskazania ul {
+  margin: 20px;
+}
+.przeciwwskazania ul li {
+  font-size: 14px;
+}
+
+.przeciwwskazania-inner {
+  border: 2px solid #0bb0ee;
+  margin: 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+/* Prepare */
+.prepare-inner {
+  text-align: left;
+  border: 2px solid #0bb0ee;
+  margin: 20px;
+}
+.prepare h2 {
+  text-align: center;
+}
+
+.prepare ul {
+  margin: 20px;
+}
+.prepare ul li {
+  font-size: 14px;
+}
+
+.prepare h4 {
+  text-align: center;
+}
+
+/* After  */
+
+.after {
+  text-align: left;
+}
+.after h2,
+.after p {
+  text-align: center;
+}
+
+.after-inner {
+  border: 2px solid #0bb0ee;
+  margin: 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.after-inner ul li {
+  margin: 0 20px;
+}
+
+/* Worth */
+.worth {
+  text-align: center;
+}
+.worth p {
+  text-align: left;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
+}
+table {
+  margin: 20px auto;
+  font-size: 14px;
+}
+table th {
+  background: #0bb0ee;
+  padding: 5px;
+}
+.worth h4 {
+  font-size: 16px;
+}
+
+/* prices */
+
+.prices {
+  margin: auto;
+}
+
+/*trychologia */
+.trychologia {
+  width: 80%;
+  margin: auto;
+}
+.trychologia h2 {
+  background: #0bb0ee;
+  margin: 40px auto;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.trychologia p {
+  text-align: justify;
+  margin: 20px 0;
+}
+.trychologia-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.trychologia-list {
+  flex-basis: 50%;
+}
+.trychologia-container ul li {
+  margin: 0 10px;
+}
+
+.default-button {
+  background: #0bb0ee;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.8s;
+  border: 2px solid #0bb0ee;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.default-button:hover {
+  background-color: white;
+  color: #0bb0ee;
+}
+.trychologia-img {
+  width: 50%;
+  text-align: center;
+}
+
+.trychologia-img img {
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #0bb0ee;
+  width: 65%;
+}
+
+/* Skończyć trychologię */
+
+/* Contact */
+.contact {
+  width: 80%;
+  margin: auto;
+}
+.contact h2 {
+  background: #0bb0ee;
+  margin: 40px auto;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-container p {
+  flex-basis: 48%;
+  text-align: center;
+  font-size: 16px;
+}
+.img-container {
+  width: 48%;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.img-container img {
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #0bb0ee;
+}
+
+#fname,#email, #tel, #msg, #contact-submit, #agreement1, #agreement2{
+  display: block;
+}
+form{
+  border:2px solid #0bb0ee;
+  width: 70%;
+  margin:0 auto 40px;
+}
+form p, #agreement1-label, #agreement2-label{
+ font-size: 11px;
+ text-align: justify;
+}
+#contact-submit{
+  padding: 10px 15px;
+  background: #0bb0ee;
+  color: white;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+}
+#contact-submit:hover{
+  background: white;
+  color: #0bb0ee;
+}
+
+.iframe-container {
+  text-align: center;
+}
+iframe {
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px 2px #0bb0ee;
+  text-align: center;
+}
+
+/* OFERTA */
+
+.oferta {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+.oferta h2 {
+  flex-basis: 100%;
+  background: #0bb0ee;
+  margin: 40px auto;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+.oferta img {
+  width: 80%;
+  margin: 15px;
+  box-shadow: 2px 2px 2px 2px #0bb0ee;
+}
+.block {
+  flex-basis: 30%;
+  transition: 0.8s;
+}
+
+.block:hover {
+  opacity: 70%;
+  margin-top: 5px;
+}
+
+
+
+/* READ-MORE-PAGE */
+
+.text{
+  text-align: justify;
+}
+
+.text h2{
+  background-color: #0bb0ee;
+  color: white;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+}
+
+.text p{
+  margin: 40px 50px;
+}
+
+/* Problemy */
+
+.problemy {
+  text-align: justify;
+}
+.problemy h4 {
+  margin-top: 50px;
+}
+.problemy {
+  display: none;
+}
+.problemy ul{
+  margin: 0 5%;
+  font-size: 14px;
+}
+
+/* Badania */
+
+.badania-trychologiczne{
+  display: none;
+}
+
+.badania-trychologiczne ul{
+  margin: 0 5%;
+  font-size: 14px;
+}
+
+/* Zabiegi */
+.zabiegi-trychologiczne{
+  display: none;
+}
+
+.zabiegi-trychologiczne ul{
+  margin: 0 5%;
+  font-size: 14px;
+}
+
+/* Trychologia-cennik */
+.trychologia-cennik{
+  display: none;
+}
+.trychologia-cennik h2{
+  background-color: #0bb0ee;
+  color: white;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+
+.trychologia-cennik td{
+  padding:5px;
+}
+.trychologia-cennik tr{
+  border:1px 0px solid black;
+}
+
+.karboksyterapia-cennik h2{
+  background-color: #0bb0ee;
+  color: white;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+
+.karboksyterapia-cennik p{
+  text-align: center;
+}

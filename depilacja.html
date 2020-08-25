@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Twoja Klinika Włosa, depilacja laserowa, trychologia</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav class="sticky-top">
+      <div class="logo">
+        <a href="index.html"><img src="/img/logo.png" alt="" /></a>
+      </div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn" />
+
+      <ul>
+        <li>
+          <a href="index.html"><i class="fas fa-home"></i></a>
+        </li>
+        <li><a href="about.html">O Nas</a></li>
+        <li>
+          <label for="btn-1" class="show">Depilacja Laserowa +</label>
+          <a href="depilacja.html">Depilacja Laserowa</a>
+          <input type="checkbox" id="btn-1" />
+          <ul>
+            <li><a href="#">Depilacja Laserowa 1</a></li>
+            <li><a href="#">Depilacja Laserowa 2</a></li>
+            <li><a href="#">Depilacja Laserowa 3</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <label for="btn-2" class="show">Trychologia +</label>
+          <a href="trychologia.html">Trychologia</a>
+          <input type="checkbox" id="btn-2" />
+          <ul>
+            <li><a href="#">Trychologia 1</a></li>
+            <li><a href="#">Trychologia 2</a></li>
+            <li><a href="#">Trychologia 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Dietetyka</a></li>
+        <li><a href="cennik.html">Cennik</a></li>
+        <li><a href="oferta.html">Oferta</a></li>
+        <li><a href="#">Sklep</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <section class="depilation-section">
+      <h2>Depilacja Laserowa</h2>
+      <div class="depilation-menu">
+        <ul>
+          <li id="first-link">Dlaczego Twoja Klinika Włosa?</li>
+          <li id="second-link">Przeciwwskazania</li>
+          <li id="third-link">Przygotowanie do zabiegu</li>
+          <li id="fourth-link">Postępowanie po zabiegu</li>
+          <li id="fifth-link">O czym warto wiedzieć ?</li>
+          <li id="sixth-link">Cennik</li>
+        </ul>
+      </div>
+      <div class="dlaczego">
+        <h2>Dlaczego Twoja Klinika włosa?</h2>
+        <div class="dlaczego-container">
+          <div class="dlaczego-inner">
+            <h4><strong>SPECJALIZACJA </strong></h4>
+            <p>
+              Naszą pasją są włosy i stale pogłębiamy wiedzę i doświadczenie
+              związane z procesem wzrostu włosów, przyczyn ich wypadania oraz
+              najskuteczniejszego ich usuwania u osób borykających się z
+              problemem nadmiernego owłosienia. W zakresie trychologii
+              współpracujemy z kliniką włosów Hairmedica, która została
+              wyróżniona przez World Trichology Society i od stycznia 2017 roku
+              jest partnerem największej organizacji trychologicznej na świecie.
+              Depilację laserową wykonujemy przy pomocy lasera medycznego
+              LightSheer DUET firmy Lumenis – światowego lidera w dziedzinie
+              produkcji laserów diodowych. Konsultacje i zabiegi wykonywane są
+              przez doświadczonych kosmetologów, przeszkolonych przez firmę
+              COHERENT (autoryzowany dystrybutor LUMENIS), w komfortowo
+              wyposażonym gabinecie, z zachowaniem wszelkich standardów
+              bezpieczeństwa i poszanowaniem Państwa prywatności. <br />
+            </p>
+          </div>
+          <div class="dlaczego-inner">
+            <h4><strong>TECHNOLOGIA I BEZPIECZEŃSTWO </strong></h4>
+            <p>
+              Laser medyczny LightSheer DUET jest najskuteczniejszym laserem
+              medycznym z cenionej na całym świecie linii LightSheer.
+              Producentem urządzenia jest firma Lumenis , która jest światowym
+              liderem w produkcji medycznych laserów do usuwania zbędnego
+              owłosienia. Urządzenie posiada honorowany na całym świecie
+              certyfikat bezpieczeństwa i jakości wydany przez amerykański Urząd
+              ds. Żywności i Leków FDA oraz certyfikaty odpowiednich instytucji
+              europejskich, w tym ISO 9001. Pozytywna opinia FDA jest
+              wyznacznikiem wysokich standardów i braku negatywnego wpływu na
+              zdrowie. <br />
+            </p>
+          </div>
+          <div class="dlaczego-inner">
+            <h4>
+              <strong
+                >OFERTA SPECJALNA <br />PAKIET NIELIMITOWANE ZABIEGI
+              </strong>
+            </h4>
+            <p>
+              Podejmując decyzję o depilacji laserowej większość z nas chciałaby
+              wiedzieć ile zabiegów trzeba wykonać, aby uzyskać oczekiwany
+              rezultat oraz ile to będzie kosztowało. Podawane ilości zabiegów
+              są zawsze szacunkowe ponieważ każdy z nas reaguje indywidualnie i
+              trudno dokładnie przewidzieć jak dobry będzie efekt. Dla osób,
+              które chciałyby zagwarantować sobie oczekiwany rezultat w ramach
+              założonego budżetu wprowadziliśmy ofertę nielimitowanych zabiegów.
+              Wykupując pakiet nielimitowanych zabiegów nie musimy się martwić
+              ile zabiegów trzeba będzie wykonać. W ciągu 2 lat od zakupu
+              pakietu można skorzystać z dowolnej liczby zabiegów na daną partię
+              ciała i cieszyć się uzyskanym efektem.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="przeciwwskazania">
+        <h2>Przeciwwskazania</h2>
+        <div class="przeciwwskazania-inner">
+          <h4>PRZECIWWSKAZANIA DO ZABIEGU DEPILACJI LASEROWEJ</h4>
+          <p>Zabiegu <strong>nie</strong> wykonuje się u osób:</p>
+          <ul>
+            <li>cierpiących na choroby nowotworowe</li>
+            <li>
+              stosujących indywidualną terapię hormonalną (hormony
+              światłouczulające)
+            </li>
+            <li>posiadających siwe włosy</li>
+            <li>cierpiących na fotodermatozy i choroby pęcherzowe skóry</li>
+            <li>
+              chorujących na bielactwo, łuszczycę, Reticularis (marmurkowa
+              skóra)
+            </li>
+            <li>cierpiących na padaczkę (przeciwskazanie względne)</li>
+            <li>posiadających rozrusznik serca</li>
+            <li>
+              mających skłonność do przebarwień (przeciwskazanie względne) lub
+              bliznowców
+            </li>
+            <li>u kobiet w ciąży lub karmiących</li>
+          </ul>
+        </div>
+        <div class="przeciwwskazania-inner">
+          <h4>PRZECIWWSKAZANIA CZASOWE</h4>
+          <ul>
+            <li>
+              wcześniejsza depilacja przez wyrywanie (pęseta, wosk, depilatory
+              elektryczne)
+            </li>
+            <li>
+              terapia miejscowa kremami z Vit A retinoidami (Isotrexin,
+              Differin, Zorac, Retin A i inne) oraz Vit C należy odstawić na 4
+              tygodnie przed planowanym zabiegiem; inne preparaty o działaniu
+              złuszczającym (np. kwasy owocowe, kwas glikolowy, salicylowy)
+              należy odstawić na 1 tydzień wcześniej.
+            </li>
+            <li>
+              terapia doustna retinoidami (np. Izotek) – 6 miesięcy przerwy.
+            </li>
+            <li>
+              leki światłouczulające: dziurawiec, nagietek, zioła szwedzkie,
+              herbata figura, Deprim i inne
+            </li>
+            <li>
+              leki światłouczulajace (fototoksyczne, fotoalergiczne i zioła o
+              takim działaniu wymagają odstawienia na 2 tygodnie przed
+              zabiegiem.
+            </li>
+            <li>leki przeciwbólowe</li>
+            <li>leki rozrzedzające krew</li>
+            <li>przeziębienie, stany zapalne</li>
+            <li>
+              aktywne infekcje skóry w miejscu zabiegu (bakteryjne, wirusowe,
+              grzybicze)
+            </li>
+            <li>
+              zabiegi operacyjne i znieczulenie ogólne; po zabiegach
+              operacyjnych w znieczuleniu ogólnym należy odczekać 3 miesiące,
+              zaś miejsce leczone nie może być depilowane do momentu całkowitego
+              wygojenia
+            </li>
+            <li>znieczulenie miejscowe – minimum 1 tydzień przerwy</li>
+            <li>szczepienia – 2 tygodnie przerwy</li>
+            <li>kuracja antybiotykowa – 2 tygodnie przerwy</li>
+            <li>opalenizna – 4-6 tygodni przerwy</li>
+            <li>samoopalacze – po ustąpieniu efektu opalenizny</li>
+            <li>
+              zabiegi złuszczające na twarz 7 dni przed zabiegiem i 14 dni po
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="prepare">
+        <h2>PRZYGOTOWANIE DO ZABIEGU</h2>
+        <div class="prepare-inner">
+          <ul>
+            <li>
+              skóra w obrębie depilowanej powierzchni nie może być sucha lub
+              podrażniona; w takim przypadku należy zastosować emolienty (kremy
+              nawilżająco-kojące) kilka dni wcześniej
+            </li>
+            <li>
+              bezpośrednio przed zabiegiem należy zgolić włosy w miejscu
+              depilacji
+            </li>
+            <li>
+              pozostawienie niewielkiego fragmentu nieogolonej skóry ok. 1 cm2
+              umożliwi ocenę barwy włosa; włosy siwe stanowią przeciwskazanie do
+              zabiegu, z uwagi na brak skuteczności laserowej depilacji w ich
+              przypadku
+            </li>
+            <li>
+              przed każdym zabiegiem włosów nie można wyrywać (pęseta, wosk,
+              depilatory elektryczne) przez 4 tygodnie w przypadku twarzy i 6
+              tygodni w innych miejscach skóry; włosy można golić, przycinać lub
+              depilować odpowiednimi kremami, choć ten ostatni sposób należy
+              zakończyć 1 tydzień wcześniej
+            </li>
+            <li>
+              stosowanie kremów, maści z zawartością Vit A, C, E, retinoidami
+              (np. Isotrexin, Differin, Retin A, Zorac i i inne) lub kwasów
+              owocowych w miejscu depilowanej powierzchni wymaga 4 tygodni
+              przerwy przed każdym zabiegiem
+            </li>
+            <li>
+              preparaty o działaniu złuszczającym należy odstawić 1 tydzień
+              przed zabiegiem
+            </li>
+            <li>
+              terapia doustna retinoidami (np. Izotek) wymaga półrocznej przerwy
+              pomiędzy końcem kuracji i pierwszym zabiegiem
+            </li>
+            <li>
+              leki światłouczulające (fototoksyczne, fotoalergiczne) i zioła o
+              takim działaniu (dziurawiec, nagietek, herbata Figura1,2) wymagają
+              odstawienia na 1 tydzień przed zabiegiem
+            </li>
+            <li>
+              aktywne infekcje skórne w miejscu zabiegu (wirusowe, bakteryjne
+              ,grzybicze) są przeciwskazaniem do zabiegu; w szczególności zabieg
+              jest możliwy 2 tygodnie po infekcji typu opryszczki wargowej lub
+              płciowej
+            </li>
+            <li>
+              aktywna opalenizna jest przeciwwskazaniem do zabiegu; minimalna
+              przerwa po ekspozycji naturalnej lub w solarium to 4-6 tygodni
+            </li>
+            <li>
+              opalenizna uzyskana w wyniku samoopalaczy (kremy, zabiegi typu
+              air-brush) stanowi również przeciwwskazanie do zabiegu; depilacja
+              jest możliwa dopiero po jej ustąpieniu
+            </li>
+            <li>
+              zabieg kosmetycznego oczyszczania w miejscu depilacji jest możliwy
+              7 dni wcześniej oraz 14 dni po wykonanym zabiegu depilacji
+            </li>
+            <li>
+              miejsce leczone poddane znieczuleniu miejscowemu nie może być
+              depilowane do momentu całkowitego wygojenia; zabieg można wykonać
+              po upływie minimum tygodnia od zastosowania znieczulenia
+            </li>
+            <li>szczepienie – należy odczekać 2 tygodnie</li>
+            <li>
+              kuracja antybiotykami powinna zostać ukończona minimum 2 tygodnie
+              przed zabiegiem
+            </li>
+            <li>
+              leki przeciwbólowe należy odstawić 2 dni przed zabiegiem; jedyną
+              substancją, która nie ma właściwości światłouczulających jest
+              paracetamol (np. Apap)
+            </li>
+            <li>
+              leki rozrzedzające krew np. Aspiryna, Polopiryna, Acard i inne z
+              kwasem salicylowym należy również odstawić 2 dni przed zabiegiem
+            </li>
+            <li>
+              przeziębienie – zabiegu nie można wykonywać w przypadku zażywania
+              leków przeciwzapalnych, przeciwgorączkowych, przeciwbólowych.
+              Zabiegi nie są wykonywane w podczas osłabienia organizmu
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="after">
+        <h2>POSTĘPOWANIE PO ZABIEGU</h2>
+        <p>
+          <strong
+            >Naturalnym objawem po zabiegu jest zaczerwienienie, czasowy obrzęk
+            depilowanego miejsca, który ustępuje po kilku godzinach do 2-3
+            dni.</strong
+          >
+          <br />
+        </p>
+        <div class="after-inner">
+          <h4>Pielęgnacja skóry w domu:</h4>
+          <ul>
+            <li>
+              2-3 dni po zabiegu należy skórę traktować delikatnie i używać do
+              mycia żelu bezmydłowego, płynu micelarnego lub mleczka
+              bezalkoholowego (ew. czysta woda)
+            </li>
+            <li>
+              nie stosować dezodorantów, antypespirantów (jeśli depilacja
+              dotyczyła pach)
+            </li>
+            <li>
+              stosować zasypkę lub krem Alantan Plus albo Bepanthen czy
+              Dermopanthen.
+            </li>
+            <li>osuszać delikatnie nie podrażniając</li>
+            <li>w dniu zabiegu należy unikać gorących kąpieli</li>
+            <li>do 3-5 dni po zabiegu należy zrezygnować z basenu</li>
+            <li>
+              opalanie naturalne lub solarium jest bezwzględnie przeciwwskazane
+              do 2 tygodni po zabiegu; w tym okresie w miejscach narażonych na
+              bezpośrednie działanie promieni UV konieczna jest fotoprotekcja
+              (kremy z filtrami anty-UVA i B o wysokich stężeniach – najlepiej
+              50+)
+            </li>
+            <li>
+              do 2 tygodni nie należy stosować preparatów o działaniu
+              złuszczającym
+            </li>
+            <li>
+              kolejne zabiegi – minimum trzy – należy wykonać w odstępach
+              średnio 4-12 tygodniowych.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="worth">
+        <h2>CZYM SIĘ RÓŻNI LightSheer DUET od IPL?</h2>
+        <p>
+          Światło lasera LightSheer DUET posiada spolaryzowaną, spójną i
+          uporządkowaną w jednym kierunku wiązkę światła o jednej długości fali.
+          Występuje tutaj zjawisko selektywnej fototermolizy. IPL ( ang. Intense
+          Pulse Light) to impulsywne żródło światła wytwarzające wiązkę promieni
+          świetlnych,które mają różną długość i są rozproszone. Promienie
+          docierają do różnych warstw skóry, co niesie za sobą ryzyko mniejszej
+          skuteczności w redukcji owłosienia.
+        </p>
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              LightSheerDuet
+            </th>
+            <th>IPL</th>
+          </tr>
+          <tr>
+            <td>Wiązka światła</td>
+            <td>Jedna długość fali, spójna</td>
+            <td>Różna długość fali, rozproszona</td>
+          </tr>
+          <tr>
+            <td>Selektywność promieniowania</td>
+            <td>Selektywna fototermoliza</td>
+            <td>Promienie docierają do różnych warstw skóry</td>
+          </tr>
+          <tr>
+            <td>Ilość zabiegów</td>
+            <td>4 – 6 zabiegów</td>
+            <td>7 – 10 zabiegów</td>
+          </tr>
+          <tr>
+            <td>Częstotliwość zabiegów</td>
+            <td>co 4 – 12 tygodni</td>
+            <td>co 3 -4 tygodnie</td>
+          </tr>
+          <tr>
+            <td>Bolesność</td>
+            <td>Umiarkowana</td>
+            <td>Umiarkowana</td>
+          </tr>
+          <tr>
+            <td>Efekt zabiegu</td>
+            <td>Trwały</td>
+            <td>Nietrwały</td>
+          </tr>
+          <tr>
+            <td>Zapuszczanie włosów przed zabiegiem</td>
+            <td>NIE</td>
+            <td>NIE</td>
+          </tr>
+          <tr>
+            <td>Wrastanie włosów po zabiegu</td>
+            <td>NIE</td>
+            <td>NIE</td>
+          </tr>
+          <tr>
+            <td>Podrażnienie skóry</td>
+            <td>Do kilku dni po zabiegu</td>
+            <td>Do kilku dni po zabiegu</td>
+          </tr>
+        </table>
+        <h4>
+          PORÓWNANIE DEPILACJI LightSheer DUET Z DEPILACJĄ WOSKIEM/DEPILATOREM
+        </h4>
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              LightSheerDuet
+            </th>
+            <th>Wosk/Depilator</th>
+          </tr>
+          <tr>
+            <td>Efekt zabiegu</td>
+            <td>Trwały</td>
+            <td>Nietrwały, odrastające włosy są coraz twardsze</td>
+          </tr>
+          <tr>
+            <td>Ilość zabiegów</td>
+            <td>4 – 6 zabiegów</td>
+            <td>Zabiegi trzeba stale powtarzać</td>
+          </tr>
+          <tr>
+            <td>Częstotliwość zabiegów</td>
+            <td>co 4 – 12 tygodni</td>
+            <td>co 2-3 tygodnie</td>
+          </tr>
+          <tr>
+            <td>Bolesność</td>
+            <td>Umiarkowana</td>
+            <td>Duża</td>
+          </tr>
+          <tr>
+            <td>Efekt zabiegu</td>
+            <td>Trwały</td>
+            <td>Nietrwały</td>
+          </tr>
+          <tr>
+            <td>Zapuszczanie włosów przed zabiegiem</td>
+            <td>NIE</td>
+            <td>TAK</td>
+          </tr>
+          <tr>
+            <td>Wrastanie włosów po zabiegu</td>
+            <td>NIE</td>
+            <td>TAK</td>
+          </tr>
+          <tr>
+            <td>Podrażnienie skóry</td>
+            <td>Do kilku dni po zabiegu</td>
+            <td>Do kilku dni po zabiegu</td>
+          </tr>
+        </table>
+        <h4>
+          PORÓWNANIE DEPILACJI LightSheer DUET Z DEPILACJĄ MASZYNKĄ JEDNORAZOWĄ
+        </h4>
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              LightSheerDuet
+            </th>
+            <th>Wosk/Depilator</th>
+          </tr>
+          <tr>
+            <td>Efekt zabiegu</td>
+            <td>Trwały</td>
+            <td>Nietrwały, odrastające włosy są coraz twardsze</td>
+          </tr>
+          <tr>
+            <td>Ilość zabiegów</td>
+            <td>4 – 6 zabiegów</td>
+            <td>Zabiegi trzeba stale powtarzać</td>
+          </tr>
+          <tr>
+            <td>Częstotliwość zabiegów</td>
+            <td>co 4 – 12 tygodni</td>
+            <td>co kilka dni</td>
+          </tr>
+          <tr>
+            <td>Bolesność</td>
+            <td>Umiarkowana</td>
+            <td>Brak</td>
+          </tr>
+          <tr>
+            <td>Wrastanie włosów po zabiegu</td>
+            <td>NIE</td>
+            <td>TAK</td>
+          </tr>
+          <tr>
+            <td>Podrażnienie skóry</td>
+            <td>Do kilku dni po zabiegu</td>
+            <td>Do kilku dni po zabiegu</td>
+          </tr>
+        </table>
+      </div>
+      <div class="prices">
+        <h2>Cennik</h2>
+        <table>
+          <tr>
+            <th></th>
+            <th>
+              Pojedynczy zabieg
+            </th>
+            <th>Pierwszy zabieg 50 ZŁ taniej</th>
+            <th>Nielimitowana ilość zabiegów</th>
+          </tr>
+          <tr>
+            <td><strong>Konsultacja</strong></td>
+            <td>BEZPŁATNA</td>
+            <td>BEZPŁATNA</td>
+            <td>BEZPŁATNA</td>
+          </tr>
+          <tr>
+            <td>Baki</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>BIKINI GŁĘBOKIE</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>BIKINI PŁYTKIE</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>BRODA</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>BRODAWKI SUTKOWE</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>BRZUCH</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>DŁONIE</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>GÓRNA WARGA (WĄSIK)</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>KLATKA PIERSIOWA</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>KARK</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>KOLANA</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>LINIA BIAŁA</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>LINIA STRINGÓW</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>ŁYDKI</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>PACHY</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>PLECY GÓRNA CZĘŚĆ</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>PLECY DOLNA CZĘŚĆ</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>POLICZKI</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>POŚLADKI</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>PRZEDRAMIONA</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>RAMIONA</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>RĘCE CAŁE</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>RAMIONA</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>STOPY</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>SZYJA</td>
+            <td>99 ZŁ</td>
+            <td>49 ZŁ</td>
+            <td>699 ZŁ</td>
+          </tr>
+          <tr>
+            <td>TWARZ</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+          <tr>
+            <td>UDA</td>
+            <td>199 ZŁ</td>
+            <td>149 ZŁ</td>
+            <td>999 ZŁ</td>
+          </tr>
+        </table>
+      </div>
+      <div class="change">
+        <div class="depilation-intro-page">
+          <div class="depilation-description">
+            <h3>LASEROWE USUWANIE OWŁOSIENIA LASEREM LIGHT SHEER DUET</h3>
+            <p>
+              Najskuteczniejszą znaną metodą pozbycia się na zawsze niechcianych
+              włosów jest depilacja laserowa. Jej skuteczność zależy jednak od
+              wielu czynników – od rodzaju urządzenia wykorzystywanego podczas
+              zabiegu, stanu głowic, właściwego doboru parametrów pracy
+              urządzenia oraz rodzaju skóry i włosów. Dysponujemy nowoczesnym
+              sprzętem, który sprawia, że depilacja laserowa przebiega szybko i
+              przynosi oczekiwane efekty. Dzięki temu możesz pozbyć się
+              wszystkich niechcianych włosów. TWOJA KLINIKA WŁOSA oferuje
+              zabiegi depilacji laserowej urządzeniem Light Sheer DUET, które
+              jest uważane za najskuteczniejszy laser medyczny w znanej na całym
+              świecie linii Light Sheer. Light Sheer DUET to nowoczesne
+              urządzenie, które zapewnia najwyższy komfort podczas zabiegu.
+              Dzięki opcji aktywnego chłodzenia depilacja Light Sheer przebiega
+              niemal bezboleśnie, co doceniają pacjenci wrażliwi na ból.
+              Równocześnie zastosowane w Light Sheer głowice sprawiają, że nawet
+              duże obszary mogą być wydepilowane w stosunkowo krótkim czasie!
+              Proponowana przez naszą klinikę depilacja laserem to zabieg
+              bezpieczny, komfortowy, szybki i skuteczny. W naszej ofercie
+              znajduje się depilacja bikini, brzucha, nóg i wiele innych.
+              Zapraszamy do zapoznania się z pełną listą wykonywanych przez nas
+              zabiegów.
+            </p>
+          </div>
+          <div class="depilation-img">
+            <img src="/img/depilacja strona glowna.jpg" alt="" />
+          </div>
+          <div class="depilation-description2">
+            <h3>Na czym polega zabieg depilacji laserowej?</h3>
+            <p>
+              Światło emitowane przez laser jest pochłaniane wybiórczo przez
+              struktury mieszka włosowego zawierającego melaninę i zamieniane na
+              ciepło, które niszczy elementy włosa odpowiedzialne za jego
+              wzrost, powodując trwałą utratę włosa i destrukcję mieszka.
+              Badania wykazały, że laserowe usuwanie owłosienia jest
+              najskuteczniejsze dla włosów znajdujących się w fazie aktywnego
+              wzrostu (anagen). Pozostałe okresy wzrostowe naszych włosów – faza
+              zaniku (katagen) i spoczynku (telogen) nie odpowiadają na
+              działanie lasera. Z tego względu aby skutecznie pozbyć się
+              owłosienia, musimy wykonać 4 -6 zabiegów w tym samym miejscu,
+              powtarzanych w odstępach średnio 4-12 tygodniowych. Przyjmuje się,
+              że po pierwszym zabiegu nie odrasta około 30-40% włosów ciemnych
+              (włosy anagenowe), po 3 zabiegach około 80-90% włosów (następna
+              część włosów, które wkroczyły w fazę anagenu). Niewielki,
+              pozostały odsetek to włosy jaśniejsze, cieńsze i mniej widoczne.
+              Pacjenci o włosach cieńszych lub nie w pełni ciemnych, muszą
+              liczyć się ze słabszym efektem (przyczyną jest zbyt mała ilość
+              melaniny w mieszku). Włosy osłabione wcześniejszymi, wielokrotnymi
+              zabiegami depilacji: woskiem, pęsetą, depilatorami elektrycznymi
+              lub laserami starszej generacji mogą wymagać przeprowadzenia
+              większej ilości zabiegów depilacji dla uzyskania
+              satysfakcjonujących rezultatów. 100% depilacja zwykle nie jest
+              możliwa, zaś włosy jaśniejsze mogą zostać tylko przerzedzone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-inner">
+          <p>
+            <strong>TWOJA KLINIKA WŁOSA </strong><br />
+            os. W. A. Mozarta 16/27 <br />
+            (wejście od ul. Siewnej) <br />
+            31-231 Kraków <br />
+            Tel: 733-903-300 <br />
+            rezerwacja@twojaklinikawlosa.pl
+          </p>
+        </div>
+        <div class="footer-inner">
+          <ul>
+            <li>
+              <a href=""><strong>INFORMACJE</strong></a>
+            </li>
+            <li><a href="">Regulaminy </a></li>
+            <li><a href="">Polityka prywatności</a></li>
+            <li><a href="">Dostawa/Płatność</a></li>
+            <li><a href="">Reklamacje/Zwroty</a></li>
+            <li><a href="">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer-inner">
+          <ul>
+            <li>
+              <a href=""><strong>MOJE KONTO</strong></a>
+            </li>
+            <li><a href="">Moje zamówienia </a></li>
+            <li><a href="">Dane kontaktowe</a></li>
+            <li><a href="">Książka adresowa</a></li>
+            <li><a href="">Zaloguj się</a></li>
+          </ul>
+        </div>
+        <div class="footer-inner">
+          <p>
+            Twoja Klinika Włosa dobiera indywidualne terapie zatrzymujące
+            wypadanie włosów i stymulujące odrastanie nowych. Wykonujemy również
+            zabiegi depilacji laserowej urządzeniem LightSheer Duet.
+          </p>
+        </div>
+        <div id="social-media-footer">
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
