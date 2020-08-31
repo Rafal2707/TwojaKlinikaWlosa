@@ -101,73 +101,6 @@ input {
   font-size: 15px;
   margin-left: 40px;
 }
-@media all and (max-width: 968px) {
-  nav ul {
-    margin-right: 0px;
-    float: left;
-  }
-  nav .logo {
-    padding-left: 30px;
-    width: 100%;
-  }
-  .show + a,
-  ul {
-    display: none;
-  }
-  nav ul li,
-  nav ul ul li {
-    display: block;
-    width: 100%;
-  }
-  nav ul li a:hover {
-    box-shadow: none;
-  }
-  .show {
-    display: block;
-    padding: 0 20px;
-    line-height: 70px;
-    cursor: pointer;
-  }
-  .show:hover {
-    color: #0bb0ee;
-  }
-  .icon {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 40px;
-    line-height: 70px;
-    cursor: pointer;
-    font-size: 25px;
-  }
-  nav ul ul {
-    top: 70px;
-    border-top: 0px;
-    float: none;
-    position: static;
-    display: none;
-    opacity: 1;
-    visibility: visible;
-  }
-  nav ul ul a {
-    padding-left: 40px;
-  }
-  nav ul ul ul a {
-    padding-left: 80px;
-  }
-  nav ul ul ul li {
-    position: static;
-  }
-  [id^="btn"]:checked + ul {
-    display: block;
-  }
-  nav ul ul li {
-    border-bottom: 0px;
-  }
-  span.cancel:before {
-    content: "\f00d";
-  }
-}
 .content {
   z-index: -1;
   position: absolute;
@@ -484,6 +417,13 @@ td {
 .przeciwwskazania ul li {
   font-size: 14px;
 }
+.przeciwwskazania-inner ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+.przeciwwskazania-inner ul li{
+  flex-basis: 100%;
+}
 
 .przeciwwskazania-inner {
   border: 2px solid #0bb0ee;
@@ -503,9 +443,12 @@ td {
 
 .prepare ul {
   margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .prepare ul li {
   font-size: 14px;
+  flex-basis: 100%;
 }
 
 .prepare h4 {
@@ -528,9 +471,13 @@ td {
   width: 80%;
   margin: 20px auto;
 }
-
+.after-inner ul{
+  display: flex;
+  flex-wrap: wrap;
+}
 .after-inner ul li {
   margin: 0 20px;
+  flex-basis: 100%;
 }
 
 /* Worth */
@@ -738,6 +685,35 @@ iframe {
   margin: 40px 50px;
 }
 
+/* cenniki */
+.cennik{
+  display: none;
+}
+.cennik h2{
+  background-color: #0bb0ee;
+  color: white;
+  border-radius: 10px;
+  width: 25%;
+  text-align: center;
+  margin: auto;
+}
+
+.cennik td{
+  padding:5px;
+}
+.cennik tr{
+  border:1px 0px solid black;
+}
+
+.cennik p{
+  text-align: center;
+}
+.cennik h4{
+  text-align: center;
+}
+.karboksyterapia, .depilacja, .dietetyka, .trychologia, .zabiegi{
+  display:block;
+}
 /* Problemy */
 
 .problemy {
@@ -775,35 +751,3 @@ iframe {
   font-size: 14px;
 }
 
-/* Trychologia-cennik */
-.trychologia-cennik{
-  display: none;
-}
-.trychologia-cennik h2{
-  background-color: #0bb0ee;
-  color: white;
-  border-radius: 10px;
-  width: 25%;
-  text-align: center;
-  margin: auto;
-}
-
-.trychologia-cennik td{
-  padding:5px;
-}
-.trychologia-cennik tr{
-  border:1px 0px solid black;
-}
-
-.karboksyterapia-cennik h2{
-  background-color: #0bb0ee;
-  color: white;
-  border-radius: 10px;
-  width: 25%;
-  text-align: center;
-  margin: auto;
-}
-
-.karboksyterapia-cennik p{
-  text-align: center;
-}

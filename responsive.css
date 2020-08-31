@@ -1,0 +1,225 @@
+/* INDEX - STRONA GŁÓWNA + USTAWIENIA NAV I FOOTER */
+
+@media all and (max-width: 1475px){
+    nav ul li a {
+        margin: 0;
+    }
+    nav ul li a {
+    padding: 7px 0px;
+    }
+    .about-img img{
+      width: 80%;
+    }
+}
+@media all and (max-width: 1089px) {
+    nav ul {
+      margin-right: 0px;
+      float: left;
+    }
+    nav .logo {
+      padding-left: 30px;
+      width: 100%;
+    }
+    .show + a,
+    ul {
+      display: none;
+    }
+    nav ul li,
+    nav ul ul li {
+      display: block;
+      width: 100%;
+    }
+    nav ul li a:hover {
+      box-shadow: none;
+    }
+    .show {
+      display: block;
+      padding: 0 20px;
+      line-height: 70px;
+      cursor: pointer;
+    }
+    .show:hover {
+      color: #0bb0ee;
+    }
+    .icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 20px;
+      line-height: 70px;
+      cursor: pointer;
+      font-size: 25px;
+    }
+    nav ul ul {
+      top: 70px;
+      border-top: 0px;
+      float: none;
+      position: static;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+    }
+    nav ul ul a {
+      padding-left: 40px;
+    }
+    nav ul ul ul a {
+      padding-left: 80px;
+    }
+    nav ul ul ul li {
+      position: static;
+    }
+    [id^="btn"]:checked + ul {
+      display: block;
+    }
+    nav ul ul li {
+      border-bottom: 0px;
+    }
+    span.cancel:before {
+      content: "\f00d";
+    }
+    .logo img{
+        margin: 0;
+        width: 33%;
+    }
+    .logo{
+        padding: 0;
+    }
+    section{
+        margin: 0;
+    }
+    .blocks p{
+        margin: 25px;
+    }
+    .block{
+        flex-basis: 50%;
+    }
+    .reservation{
+        margin: 0;
+    }
+    .read-more{
+        padding: 25px;
+    }
+    .read-more-inner{
+        flex-basis: 100%;
+        margin: 20px 0 ;
+    }
+    .footer-container {
+        margin: 0;
+    }
+    .footer-inner {
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    /* ABOUT */
+    .about{
+      margin: 20px;
+    }
+    .about p{
+      margin: 20px;
+    }
+
+    .text h2{
+      width: 50%;
+    }
+    .text p{
+      margin: 30px;
+    }
+    .dlaczego h2{
+      font-size: 1.5rem;
+    }
+    /* ********* */
+       /* DEPILACJA */
+    .depilation-menu ul{
+      flex-wrap: wrap;
+    }
+    .depilation-menu ul li{
+      flex-basis: 100%;
+    }
+    .depilation-description h3,
+    .depilation-description2 h3{
+      font-size: 1rem;
+      text-align: center;
+    }
+    .depilation-img,
+    .depilation-description{
+      flex-basis: 100%;
+    }
+
+    .depilation-section h2{
+      width: 100%;
+      margin: auto;
+    }
+
+    .dlaczego-inner{
+      flex-basis: 100%;
+      margin: 10px;
+    }
+    /* ************ */
+
+    /* PRZECIWWSKAZANIA */
+    .przeciwwskazania-inner{
+      width: 100%;
+    }
+    /* ***** */
+
+    /* AFTER */
+    .after-inner{
+      width: 100%;
+    }
+  }
+@media all and (max-width: 792px){
+    .logo img{
+        width: 50%;
+    }
+    /* ABOUT */
+    .blocks p{
+        margin: 0;
+    }
+    .block{
+        flex-basis: 100%;
+    }
+    .read-more{
+        padding: 0;
+    }
+
+    .about-img img {
+      width: 80%;
+    }
+    .about-block{
+      flex-wrap: wrap;
+    }
+    /* ************ */
+    .text h2{
+      width: 90%;
+    }
+    .text p{
+      margin: 20px;
+    }
+
+    .depilation-section h2{
+      font-size: 1.5rem;
+    }
+
+ 
+
+
+
+
+
+
+}
+
+@media all and (max-width: 450px){
+    .logo img{
+        width: 80%;
+    }
+
+    table{
+      font-size: 12px;
+    }
+    .worth p{
+      width: 100%;
+    }
+}
+

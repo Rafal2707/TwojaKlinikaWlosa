@@ -97,7 +97,7 @@ $('#problem-link').click(function(){
     $('.trychologia-intro-page').hide();
     $('.badania-trychologiczne').hide();
     $('.zabiegi-trychologiczne').hide();
-    $('.trychologia-cennik').hide();
+    $('.cennik').hide();
 
 })
 
@@ -108,7 +108,7 @@ $('#badania-link').click(function(){
     $('.trychologia-intro-page').hide();
     $('.problemy').hide();
     $('.zabiegi-trychologiczne').hide();
-    $('.trychologia-cennik').hide();
+    $('.cennik').hide();
 })
 
 $('#zabiegi-link').click(function(){
@@ -118,27 +118,14 @@ $('#zabiegi-link').click(function(){
     $('.trychologia-intro-page').hide();
     $('.problemy').hide();
     $('.badania-trychologiczne').hide();
-    $('.trychologia-cennik').hide();
+    $('.cennik').hide();
 })
 $('#cennik-link').click(function(){
-    if($('.trychologia-cennik').css('display','none')){
-        $('.trychologia-cennik').css('display','block');
+    if($('.cennik').css('display','none')){
+        $('.cennik').css('display','block');
     }
     $('.trychologia-intro-page').hide();
     $('.problemy').hide();
     $('.badania-trychologiczne').hide(); 
     $('.zabiegi-trychologiczne').hide();
 })
-
-
-$('#depilacja-cennik-link').click( function () {
-    if($('.prices').css('display','none')){
-        $('.prices').css('display','block');
-    }
-    $('.depilation-intro-page').hide();
-    $('.dlaczego').hide();
-    $('.przeciwwskazania').hide();
-    $('.prepare').hide();
-    $('.after').hide();
-    $('.worth').hide();
-});
