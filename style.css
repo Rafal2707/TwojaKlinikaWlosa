@@ -598,6 +598,14 @@ table th {
   box-shadow: 2px 2px 2px 2px #0bb0ee;
 }
 
+    .form-container form{
+      width: 100%;
+    }
+
+    .iframe-container iframe{
+      height: 250px;
+    }
+
 #fname,#email, #tel, #msg, #contact-submit, #agreement1, #agreement2{
   display: block;
 }

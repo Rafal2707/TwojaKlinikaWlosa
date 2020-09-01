@@ -87,6 +87,7 @@
     section{
         margin: 0;
     }
+
     .blocks p{
         margin: 25px;
     }
@@ -167,10 +168,38 @@
     .after-inner{
       width: 100%;
     }
+
+    /* CENNIK KARBO */
+    .karboksyterapia h2{
+      width: 60%;
+    }
+
+    /* CENNIK TRYCHOLOGIA */
+
+    .trychologia h2{
+      width: 60%;
+    }
+
+    .trychologia{
+      margin:1px auto;
+    }
+    /* KONTAKT */
+    .form-container form{
+      width: 100%;
+    }
+
+    .iframe-container iframe{
+      height: 250px;
+    }
   }
 @media all and (max-width: 792px){
     .logo img{
         width: 50%;
+    }
+
+    .blocks h1,
+    .help-section h2{
+      font-size: 1.5rem;
     }
     /* ABOUT */
     .blocks p{
@@ -201,12 +230,50 @@
       font-size: 1.5rem;
     }
 
- 
+    /* TRYCHOLOGIA */
 
+    .trychologia-list{
+      flex-basis: 100%;
+    }
+    .trychologia-list ul{
+      display: flex;
+      flex-wrap: wrap;
+    }
 
+    .trychologia-list ul li{
+      flex-basis: 100%;
+    }
 
+    .trychologia-img{
+      flex-basis: 100%;
+    }
 
+    .cennik h2{
+      width: 80%;
+    }
+    .cennik table {
+      margin: 10px auto;
+    }
 
+    .cennik{
+      margin: 5px;
+    }
+    .trychologia{
+      margin:0px auto;
+    }
+
+    /* KONTAKT */
+    .img-container{
+      width: 100%;
+    }
+
+    .form-container form{
+      width: 100%;
+    }
+
+    .iframe-container iframe{
+      height: 250px;
+    }
 
 }
 
@@ -221,5 +288,14 @@
     .worth p{
       width: 100%;
     }
+    .cennik table{
+      font-size: 11px;
+    }
+    .karboksyterapia h2{
+      width: 90%;
+    }
+
+
+
 }
 
